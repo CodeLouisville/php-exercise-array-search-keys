@@ -22,7 +22,7 @@ function array_search_keys(array $array, $string = NULL) {
         if (strpos($key, $string) != FALSE) {
             $found_keys = $key;
         }
-
-        return $found_keys;
     }
+    
+    return $found_keys;
 }
