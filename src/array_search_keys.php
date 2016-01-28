@@ -20,9 +20,9 @@ function array_search_keys(array $array, $string = NULL) {
 
     foreach ($keys as $key) {
         if (strpos($key, $string) != FALSE) {
-            $found_keys = $key;
+            $found_keys[] = $key;
         }
     }
-    
+
     return $found_keys;
 }
