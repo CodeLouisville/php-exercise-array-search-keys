@@ -14,7 +14,7 @@ Note: for this exercise, you can assume that all keys within the given array are
 
 //Optional second parameter uses a default value of NULL to make it optional
 
-function array_search_keys(array $array, string $string = NULL) {
+function array_search_keys(array $array, $string = NULL) {
     $keys = array_keys($array);
     $found_keys = [];
 
