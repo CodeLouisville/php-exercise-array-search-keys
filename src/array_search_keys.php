@@ -18,10 +18,14 @@ function array_search_keys(array $array, $string = NULL) {
     $keys = array_keys($array);
     $found_keys = [];
 
-    foreach ($keys as $key) {
-        if (strpos($key, (string) $string) !== FALSE) {
-            $found_keys[] = $key;
-        }
+    // foreach ($keys as $key) {
+    //     if (strpos($key, $string) !== FALSE) {
+    //         $found_keys[] = $key;
+    //     }
+    // }
+
+    if ($key = array_search($string, $keys) !== FALSE) {
+        $found_keys[] = $key;
     }
 
     return $found_keys;
