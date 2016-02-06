@@ -1,6 +1,6 @@
 <?php
 
-  function array_search_keys( $array, $search ) {
+  function array_search_keys( $array, $search = null ) {
     $found = [];    
     
     foreach( $array as $key => $item ) {
