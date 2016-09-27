@@ -4,7 +4,7 @@ function array_search_keys( array $array, $search = null) {
     $new_array = array();
 
     foreach($array as $key => $value) {
-        if (is_int(strpos($key, $search))) {
+        if (stripos($key, $search) !== false) {
             $new_array[] = $key;
         }
     }
