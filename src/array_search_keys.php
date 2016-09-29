@@ -7,6 +7,8 @@ function array_search_keys($array, $string = null ){
     if (strpos($key, $string) !==false){
       $output[] = $key;
     }
-  } var_dump($output);
+  } return $output;
 }
+
+
 ?>
