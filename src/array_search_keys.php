@@ -1,10 +1,12 @@
 <?php
-$output = [];
-function array_search_keys($array, $string= null){
-  foreach ($array as $key => $val){
-    if ($key == $val){
-    $output[] = $val;
+
+function array_search_keys($array, $string = null ){
+  $allKeys = array_keys($array);
+  $output = [];
+  foreach ($allKeys as $key){
+    if ($key == $string){
+      $output = $key;
     }
-  }return $output;
+  } return($output);
 }
 ?>
